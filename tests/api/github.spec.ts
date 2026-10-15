@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { GitHubService } from '../../services/GitHubService';
+import { config } from '../../config/appConfig';
 
 test('API_001: Authenticate using token and verify GitHub user',
     async ({ playwright }) => {
@@ -17,7 +18,7 @@ test('API_001: Authenticate using token and verify GitHub user',
 
             const responseBody = await response.json();
 
-            expect(responseBody.login).toBe('Fhanigituser');
+            expect(responseBody.login).toBe(config.repo_api);
 
         } finally {
             await apiContext.dispose();
