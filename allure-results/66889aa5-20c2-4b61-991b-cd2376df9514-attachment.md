@@ -1,0 +1,521 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ui\github.spec.ts >> UI_003: Open searched repository and log its name
+- Location: tests\ui\github.spec.ts:19:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e3]:
+    - banner "Global navigation menu" [ref=f2e4]:
+      - generic [ref=f2e5]:
+        - generic [ref=f2e6]:
+          - button "Open menu" [ref=f2e8] [cursor=pointer]
+          - link "Homepage (g then d)" [ref=f2e11] [cursor=pointer]:
+            - /url: /
+        - generic [ref=f2e14]:
+          - navigation "Breadcrumbs" [ref=f2e15]:
+            - list [ref=f2e16]:
+              - listitem [ref=f2e17]:
+                - link "EswarZenGIT123" [ref=f2e18] [cursor=pointer]:
+                  - /url: /EswarZenGIT123
+              - listitem [ref=f2e20]:
+                - link "AIQE_PLAYWRIGHTREPO" [ref=f2e21] [cursor=pointer]:
+                  - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO
+                - button "Switch repository (alt shift r)" [ref=f2e22] [cursor=pointer]
+          - button "Open quick search dialog, type / to search" [ref=f2e27] [cursor=pointer]:
+            - generic [ref=f2e29]:
+              - generic:
+                - text: Type
+                - generic: /
+                - text: to search
+        - generic [ref=f2e30]:
+          - generic [ref=f2e31]:
+            - generic [ref=f2e34]:
+              - link "Chat with Copilot" [ref=f2e36] [cursor=pointer]:
+                - /url: /copilot
+              - button "Open Copilot…" [ref=f2e41] [cursor=pointer]
+            - button "Create new..." [ref=f2e43] [cursor=pointer]
+            - generic [ref=f2e45]:
+              - link "All issues" [ref=f2e46] [cursor=pointer]:
+                - /url: /issues
+              - link "All pull requests" [ref=f2e50] [cursor=pointer]:
+                - /url: /pulls
+              - link "All repositories" [ref=f2e53] [cursor=pointer]:
+                - /url: /repos
+          - link "You have unread notifications (g then n)" [ref=f2e56] [cursor=pointer]:
+            - /url: /notifications
+          - button "Open user navigation menu" [ref=f2e60] [cursor=pointer]:
+            - img "User avatar" [ref=f2e61]
+      - heading "Repository navigation" [level=2] [ref=f2e62]
+      - navigation "Repository" [ref=f2e63]:
+        - list [ref=f2e64]:
+          - listitem [ref=f2e65]:
+            - link "Code" [ref=f2e66] [cursor=pointer]:
+              - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO
+          - listitem [ref=f2e71]:
+            - link "Issues" [ref=f2e72] [cursor=pointer]:
+              - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/issues
+          - listitem [ref=f2e78]:
+            - link "Pull requests" [ref=f2e79] [cursor=pointer]:
+              - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/pulls
+          - listitem [ref=f2e84]:
+            - link "Agents" [ref=f2e85] [cursor=pointer]:
+              - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/agents?author=EswarZenGIT123
+          - listitem [ref=f2e91]:
+            - link "Actions" [ref=f2e92] [cursor=pointer]:
+              - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/actions
+          - listitem [ref=f2e97]:
+            - link "Projects" [ref=f2e98] [cursor=pointer]:
+              - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/projects
+          - listitem [ref=f2e103]:
+            - link "Wiki" [ref=f2e104] [cursor=pointer]:
+              - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/wiki
+          - listitem [ref=f2e109]:
+            - link "Security and quality" [ref=f2e110] [cursor=pointer]:
+              - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/security
+          - listitem [ref=f2e115]:
+            - link "Insights" [ref=f2e116] [cursor=pointer]:
+              - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/pulse
+          - listitem [ref=f2e121]:
+            - link "Settings" [ref=f2e122] [cursor=pointer]:
+              - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/settings
+    - main [ref=f2e127]:
+      - generic [ref=f2e136]:
+        - generic [ref=f2e140]:
+          - generic [ref=f2e143]:
+            - img "EswarZenGIT123" [ref=f2e144]
+            - generic "AIQE_PLAYWRIGHTREPO" [ref=f2e145]:
+              - strong [ref=f2e146]:
+                - link "AIQE_PLAYWRIGHTREPO" [ref=f2e147] [cursor=pointer]:
+                  - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO
+            - generic [ref=f2e148]: Public
+          - list [ref=f2e150]:
+            - listitem [ref=f2e151]:
+              - button "Pin EswarZenGIT123/AIQE_PLAYWRIGHTREPO" [ref=f2e152] [cursor=pointer]:
+                - generic [ref=f2e153]: Pin
+            - listitem [ref=f2e155]:
+              - 'button "Watch: Participating in EswarZenGIT123/AIQE_PLAYWRIGHTREPO. 0 users are watching this repository. Click to change subscription settings." [ref=f2e156] [cursor=pointer]':
+                - generic [ref=f2e157]:
+                  - generic [ref=f2e158]: Watch
+                  - generic:
+                    - generic [aria-hidden]: "0"
+                    - generic: (0)
+            - listitem [ref=f2e159]:
+              - button "You own EswarZenGIT123/AIQE_PLAYWRIGHTREPO and are not a member of any organizations" [ref=f2e160]:
+                - generic [ref=f2e162]:
+                  - text: Fork
+                  - generic [aria-hidden] [ref=f2e163]: "0"
+                  - generic [ref=f2e164]: (0)
+            - listitem [ref=f2e165]:
+              - generic [ref=f2e166]:
+                - button "Star EswarZenGIT123/AIQE_PLAYWRIGHTREPO" [ref=f2e169] [cursor=pointer]:
+                  - generic [ref=f2e171]:
+                    - text: Star
+                    - generic [aria-hidden] [ref=f2e172]: "0"
+                    - generic [ref=f2e173]: (0)
+                - button "Star lists" [ref=f2e175] [cursor=pointer]
+        - generic [ref=f2e178]:
+          - generic [ref=f2e181]:
+            - generic [ref=f2e182]:
+              - generic [ref=f2e183]:
+                - button "main branch" [ref=f2e185] [cursor=pointer]:
+                  - generic [ref=f2e186]: main
+                - generic [ref=f2e190]:
+                  - link [ref=f2e191] [cursor=pointer]:
+                    - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/branches
+                    - generic [ref=f2e194]:
+                      - strong [ref=f2e195]: "1"
+                      - text: Branch
+                  - link [ref=f2e196] [cursor=pointer]:
+                    - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/tags
+                    - generic [ref=f2e199]:
+                      - strong [ref=f2e200]: "0"
+                      - text: Tags
+              - generic [ref=f2e201]:
+                - generic [ref=f2e202]:
+                  - generic [ref=f2e205]:
+                    - combobox "Go to file" [ref=f2e209]
+                    - generic [ref=f2e212]:
+                      - generic [ref=f2e213]: t
+                      - generic [aria-hidden] [ref=f2e214]: T
+                  - generic [ref=f2e215]:
+                    - heading "Add file" [level=2] [ref=f2e216]
+                    - button "Add file" [ref=f2e217] [cursor=pointer]
+                - button "Code" [ref=f2e223] [cursor=pointer]
+            - generic [ref=f2e226]:
+              - generic [ref=f2e227]:
+                - generic [ref=f2e229]:
+                  - heading "Latest commit" [level=2] [ref=f2e230]
+                  - generic [ref=f2e231]:
+                    - generic [ref=f2e233]:
+                      - link [ref=f2e234] [cursor=pointer]:
+                        - /url: /EswarZenGIT123
+                        - img "EswarZenGIT123" [ref=f2e235]
+                      - link "commits by EswarZenGIT123" [ref=f2e236] [cursor=pointer]:
+                        - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commits?author=EswarZenGIT123
+                        - text: EswarZenGIT123
+                    - generic [ref=f2e237]:
+                      - link "last changes" [ref=f2e240] [cursor=pointer]:
+                        - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/fec4bc573d4e352721dabb2ca6c2c90ddbc350b8
+                      - button "failure" [ref=f2e241] [cursor=pointer]
+                  - generic [ref=f2e244]:
+                    - generic [ref=f2e246]:
+                      - link "Commit fec4bc5" [ref=f2e247] [cursor=pointer]:
+                        - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/fec4bc573d4e352721dabb2ca6c2c90ddbc350b8
+                        - text: fec4bc5
+                      - text: ·
+                      - generic "Oct 16, 2026, 1:04 AM GMT+5:30" [ref=f2e248]: Oct 15, 202617 minutes ago
+                    - generic [ref=f2e249]:
+                      - heading "History" [level=2] [ref=f2e250]
+                      - link "2 Commits" [ref=f2e251] [cursor=pointer]:
+                        - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commits/main/
+                - heading "Folders and files" [level=2] [ref=f2e254]
+                - table "Folders and files" [ref=f2e256]:
+                  - rowgroup:
+                    - row "Name Last commit message Last commit date":
+                      - columnheader "Name"
+                      - columnheader "Last commit message"
+                      - columnheader "Last commit date"
+                  - rowgroup [ref=f2e257]:
+                    - row [ref=f2e258]:
+                      - cell [ref=f2e259]:
+                        - link ".github/workflows, (Directory)" [ref=f2e266] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/tree/main/.github/workflows
+                          - text: .github/workflows
+                      - cell [ref=f2e267]:
+                        - link "Code for playwright capstone project" [ref=f2e270] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/e2116d79e10a45d6768173c042ce743051babfb8
+                      - cell "Oct 15, 202636 minutes ago" [ref=f2e271]
+                    - row [ref=f2e273]:
+                      - cell [ref=f2e274]:
+                        - link "config, (Directory)" [ref=f2e281] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/tree/main/config
+                          - text: config
+                      - cell [ref=f2e282]:
+                        - link "Code for playwright capstone project" [ref=f2e285] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/e2116d79e10a45d6768173c042ce743051babfb8
+                      - cell "Oct 15, 202636 minutes ago" [ref=f2e286]
+                    - row [ref=f2e288]:
+                      - cell [ref=f2e289]:
+                        - link "data, (Directory)" [ref=f2e296] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/tree/main/data
+                          - text: data
+                      - cell [ref=f2e297]:
+                        - link "last changes" [ref=f2e300] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/fec4bc573d4e352721dabb2ca6c2c90ddbc350b8
+                      - cell "Oct 15, 202617 minutes ago" [ref=f2e301]
+                    - row [ref=f2e303]:
+                      - cell [ref=f2e304]:
+                        - link "pages, (Directory)" [ref=f2e311] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/tree/main/pages
+                          - text: pages
+                      - cell [ref=f2e312]:
+                        - link "Code for playwright capstone project" [ref=f2e315] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/e2116d79e10a45d6768173c042ce743051babfb8
+                      - cell "Oct 15, 202636 minutes ago" [ref=f2e316]
+                    - row [ref=f2e318]:
+                      - cell [ref=f2e319]:
+                        - link "services, (Directory)" [ref=f2e326] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/tree/main/services
+                          - text: services
+                      - cell [ref=f2e327]:
+                        - link "Code for playwright capstone project" [ref=f2e330] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/e2116d79e10a45d6768173c042ce743051babfb8
+                      - cell "Oct 15, 202636 minutes ago" [ref=f2e331]
+                    - row [ref=f2e333]:
+                      - cell [ref=f2e334]:
+                        - link "tests, (Directory)" [ref=f2e341] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/tree/main/tests
+                          - text: tests
+                      - cell [ref=f2e342]:
+                        - link "last changes" [ref=f2e345] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/fec4bc573d4e352721dabb2ca6c2c90ddbc350b8
+                      - cell "Oct 15, 202617 minutes ago" [ref=f2e346]
+                    - row [ref=f2e348]:
+                      - cell [ref=f2e349]:
+                        - link ".gitignore, (File)" [ref=f2e356] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/blob/main/.gitignore
+                          - text: .gitignore
+                      - cell [ref=f2e357]:
+                        - link "Code for playwright capstone project" [ref=f2e360] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/e2116d79e10a45d6768173c042ce743051babfb8
+                      - cell "Oct 15, 202636 minutes ago" [ref=f2e361]
+                    - row [ref=f2e363]:
+                      - cell [ref=f2e364]:
+                        - link "README.md, (File)" [ref=f2e371] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/blob/main/README.md
+                          - text: README.md
+                      - cell [ref=f2e372]:
+                        - link "Code for playwright capstone project" [ref=f2e375] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/e2116d79e10a45d6768173c042ce743051babfb8
+                      - cell "Oct 15, 202636 minutes ago" [ref=f2e376]
+                    - row [ref=f2e378]:
+                      - cell [ref=f2e379]:
+                        - link "package-lock.json, (File)" [ref=f2e386] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/blob/main/package-lock.json
+                          - text: package-lock.json
+                      - cell [ref=f2e387]:
+                        - link "Code for playwright capstone project" [ref=f2e390] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/e2116d79e10a45d6768173c042ce743051babfb8
+                      - cell "Oct 15, 202636 minutes ago" [ref=f2e391]
+                    - row [ref=f2e393]:
+                      - cell [ref=f2e394]:
+                        - link "package.json, (File)" [ref=f2e401] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/blob/main/package.json
+                          - text: package.json
+                      - cell [ref=f2e402]:
+                        - link "Code for playwright capstone project" [ref=f2e405] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/e2116d79e10a45d6768173c042ce743051babfb8
+                      - cell "Oct 15, 202636 minutes ago" [ref=f2e406]
+                    - row [ref=f2e408]:
+                      - cell [ref=f2e409]:
+                        - link "playwright.config.ts, (File)" [ref=f2e416] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/blob/main/playwright.config.ts
+                          - text: playwright.config.ts
+                      - cell [ref=f2e417]:
+                        - link "Code for playwright capstone project" [ref=f2e420] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/e2116d79e10a45d6768173c042ce743051babfb8
+                      - cell "Oct 15, 202636 minutes ago" [ref=f2e421]
+                    - row [ref=f2e423]:
+                      - cell [ref=f2e424]:
+                        - link "tsconfig.json, (File)" [ref=f2e431] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/blob/main/tsconfig.json
+                          - text: tsconfig.json
+                      - cell [ref=f2e432]:
+                        - link "Code for playwright capstone project" [ref=f2e435] [cursor=pointer]:
+                          - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/commit/e2116d79e10a45d6768173c042ce743051babfb8
+                      - cell "Oct 15, 202636 minutes ago" [ref=f2e436]
+              - generic [ref=f2e439]:
+                - generic [ref=f2e440]:
+                  - heading "Repository files navigation" [level=2] [ref=f2e441]
+                  - navigation "Repository files" [ref=f2e442]:
+                    - list [ref=f2e443]:
+                      - listitem [ref=f2e444]:
+                        - link "README" [ref=f2e445] [cursor=pointer]:
+                          - /url: "#"
+                  - button "Edit file" [ref=f2e450] [cursor=pointer]
+                  - button "Outline" [ref=f2e453] [cursor=pointer]
+                - article [ref=f2e457]:
+                  - generic [ref=f2e458]:
+                    - heading "GitHub UI + API Playwright TypeScript Framework" [level=1] [ref=f2e459]
+                    - 'link "Permalink: GitHub UI + API Playwright TypeScript Framework" [ref=f2e460] [cursor=pointer]':
+                      - /url: "#github-ui--api-playwright-typescript-framework"
+                  - generic [ref=f2e463]:
+                    - heading "Purpose" [level=2] [ref=f2e464]
+                    - 'link "Permalink: Purpose" [ref=f2e465] [cursor=pointer]':
+                      - /url: "#purpose"
+                  - paragraph [ref=f2e468]:
+                    - text: Three UI tests against github.com (login, search Top repositories, open repo) and one API test using GitHub REST API
+                    - code [ref=f2e469]: GET /user
+                    - text: . UI automation uses Page Object Model; API calls use a Service Layer. JSON contains non-secret test data;
+                    - code [ref=f2e470]: .env
+                    - text: /GitHub Secrets contain credentials.
+                  - generic [ref=f2e471]:
+                    - heading "Setup (Windows CMD / VS Code)" [level=2] [ref=f2e472]
+                    - 'link "Permalink: Setup (Windows CMD / VS Code)" [ref=f2e473] [cursor=pointer]':
+                      - /url: "#setup-windows-cmd--vs-code"
+                  - list [ref=f2e476]:
+                    - listitem [ref=f2e477]:
+                      - code [ref=f2e478]: npm install
+                    - listitem [ref=f2e479]:
+                      - code [ref=f2e480]: npx playwright install chromium
+                    - listitem [ref=f2e481]:
+                      - text: Copy
+                      - code [ref=f2e482]: .env.example
+                      - text: to
+                      - code [ref=f2e483]: .env
+                      - text: ", then set"
+                      - code [ref=f2e484]: GITHUB_PASSWORD
+                      - text: and
+                      - code [ref=f2e485]: GITHUB_TOKEN
+                      - text: . Do not commit
+                      - code [ref=f2e486]: .env
+                      - text: .
+                    - listitem [ref=f2e487]:
+                      - code [ref=f2e488]: npm run test:headed
+                      - text: for 3 UI tests;
+                      - code [ref=f2e489]: npm run test:api
+                      - text: for 1 API test;
+                      - code [ref=f2e490]: npm test
+                      - text: for all four.
+                    - listitem [ref=f2e491]:
+                      - code [ref=f2e492]: npm run report
+                      - text: to open the HTML report.
+                  - generic [ref=f2e493]:
+                    - heading "Commands" [level=2] [ref=f2e494]
+                    - 'link "Permalink: Commands" [ref=f2e495] [cursor=pointer]':
+                      - /url: "#commands"
+                  - list [ref=f2e498]:
+                    - listitem [ref=f2e499]:
+                      - code [ref=f2e500]: npm run test:ui
+                      - text: — all three UI tests
+                    - listitem [ref=f2e501]:
+                      - code [ref=f2e502]: npm run test:headed
+                      - text: — UI tests in visible Chromium
+                    - listitem [ref=f2e503]:
+                      - code [ref=f2e504]: npm run test:api
+                      - text: — API token authentication test
+                    - listitem [ref=f2e505]:
+                      - code [ref=f2e506]: npx playwright test -g "UI_001" --headed
+                      - text: — first UI test only
+                    - listitem [ref=f2e507]:
+                      - code [ref=f2e508]: npx playwright test -g "UI_002" --headed
+                      - text: — second UI test only
+                    - listitem [ref=f2e509]:
+                      - code [ref=f2e510]: npx playwright test -g "UI_003" --headed
+                      - text: — third UI test only
+                    - listitem [ref=f2e511]:
+                      - code [ref=f2e512]: npm test
+                      - text: — all tests
+                    - listitem [ref=f2e513]:
+                      - code [ref=f2e514]: npm run typecheck
+                      - text: — TypeScript static validation
+                    - listitem [ref=f2e515]:
+                      - code [ref=f2e516]: npm run report
+                      - text: — HTML report
+                  - generic [ref=f2e517]:
+                    - heading "GitHub Actions" [level=2] [ref=f2e518]
+                    - 'link "Permalink: GitHub Actions" [ref=f2e519] [cursor=pointer]':
+                      - /url: "#github-actions"
+                  - paragraph [ref=f2e522]:
+                    - text: Push to
+                    - code [ref=f2e523]: main
+                    - text: "or use Actions > GitHub Playwright UI API > Run workflow. Configure repository secrets under Settings > Secrets and variables > Actions:"
+                  - list [ref=f2e524]:
+                    - listitem [ref=f2e525]:
+                      - code [ref=f2e526]: TEST_GITHUB_PASSWORD
+                      - text: — password for a dedicated test account
+                    - listitem [ref=f2e527]:
+                      - code [ref=f2e528]: TEST_GITHUB_TOKEN
+                      - text: — personal access token authorized to read the test account's profile via GET /user
+                  - paragraph [ref=f2e529]:
+                    - text: The test account must have access to the
+                    - code [ref=f2e530]: demosession1212
+                    - text: repository. The dashboard sidebar and login UI can change; inspect live DOM if the Top repositories search selector changes. GitHub may require MFA, device verification or CAPTCHA; do not bypass those protections. For reliable CI, use an approved dedicated test account and appropriate authentication strategy. GitHub Actions may restrict access to secrets in pull requests from forks.
+                  - generic [ref=f2e531]:
+                    - heading "API login clarification" [level=2] [ref=f2e532]
+                    - 'link "Permalink: API login clarification" [ref=f2e533] [cursor=pointer]':
+                      - /url: "#api-login-clarification"
+                  - paragraph [ref=f2e536]:
+                    - text: GitHub has no supported username/password REST login endpoint. The API test validates token-based authentication via
+                    - code [ref=f2e537]: GET https://api.github.com/user
+                    - text: . A token must be generated separately in GitHub account settings and stored securely.
+                  - generic [ref=f2e538]:
+                    - heading "Framework walkthrough" [level=2] [ref=f2e539]
+                    - 'link "Permalink: Framework walkthrough" [ref=f2e540] [cursor=pointer]':
+                      - /url: "#framework-walkthrough"
+                  - list [ref=f2e543]:
+                    - listitem [ref=f2e544]:
+                      - code [ref=f2e545]: config/appConfig.ts
+                      - text: ": URLs, username, environment secrets."
+                    - listitem [ref=f2e546]:
+                      - code [ref=f2e547]: data/testData.json
+                      - text: ": non-secret test inputs."
+                    - listitem [ref=f2e548]:
+                      - code [ref=f2e549]: pages/
+                      - text: ": UI locators and reusable UI actions."
+                    - listitem [ref=f2e550]:
+                      - code [ref=f2e551]: services/
+                      - text: ": REST API calls."
+                    - listitem [ref=f2e552]:
+                      - code [ref=f2e553]: tests/ui
+                      - text: ": 3 UI scenarios."
+                    - listitem [ref=f2e554]:
+                      - code [ref=f2e555]: tests/api
+                      - text: ": 1 API scenario."
+                    - listitem [ref=f2e556]:
+                      - code [ref=f2e557]: playwright.config.ts
+                      - text: ": browser, retries, screenshots, traces and reporting."
+                    - listitem [ref=f2e558]:
+                      - code [ref=f2e559]: .github/workflows/playwright.yml
+                      - text: ": CI automation and report upload."
+                  - generic [ref=f2e560]:
+                    - heading "Notes" [level=2] [ref=f2e561]
+                    - 'link "Permalink: Notes" [ref=f2e562] [cursor=pointer]':
+                      - /url: "#notes"
+                  - paragraph [ref=f2e565]: Never store real account passwords in source control. If a password has been shared outside a trusted channel, rotate it. Live GitHub login and dashboard behavior may vary by account, session, MFA, or GitHub UI changes. CI may fail for reasons outside test code when interactive login verification is required.
+          - generic [ref=f2e568]:
+            - generic [ref=f2e569]:
+              - heading "About Edit repository metadata" [level=2] [ref=f2e570]:
+                - generic [ref=f2e572]:
+                  - generic [ref=f2e573]: About
+                  - button "Edit repository metadata" [ref=f2e574] [cursor=pointer]
+              - generic [ref=f2e577]: No description, website, or topics provided.
+              - heading "Resources" [level=3] [ref=f2e578]
+              - link "Readme" [ref=f2e580] [cursor=pointer]:
+                - /url: "#readme-ov-file"
+              - generic [ref=f2e583]:
+                - link "Activity" [ref=f2e586] [cursor=pointer]:
+                  - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/activity
+                - generic [ref=f2e589]:
+                  - heading "Stars" [level=3] [ref=f2e590]
+                  - link [ref=f2e592] [cursor=pointer]:
+                    - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/stargazers
+                    - strong [ref=f2e596]: "0"
+                    - text: stars
+                  - heading "Watchers" [level=3] [ref=f2e597]
+                  - link [ref=f2e599] [cursor=pointer]:
+                    - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/watchers
+                    - strong [ref=f2e603]: "0"
+                    - text: watching
+                  - heading "Forks" [level=3] [ref=f2e604]
+                  - link [ref=f2e606] [cursor=pointer]:
+                    - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/forks
+                    - strong [ref=f2e610]: "0"
+                    - text: forks
+            - generic [ref=f2e611]:
+              - heading [level=2] [ref=f2e612]:
+                - link "Releases" [ref=f2e614] [cursor=pointer]:
+                  - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/releases
+              - generic [ref=f2e615]: No releases published
+              - link "Create a new release" [ref=f2e617] [cursor=pointer]:
+                - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/releases/new
+            - generic [ref=f2e618]:
+              - heading [level=2] [ref=f2e619]:
+                - link "Packages" [ref=f2e621] [cursor=pointer]:
+                  - /url: /users/EswarZenGIT123/packages?repo_name=AIQE_PLAYWRIGHTREPO
+              - generic [ref=f2e622]:
+                - text: No packages published
+                - link "Publish your first package" [ref=f2e623] [cursor=pointer]:
+                  - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/packages
+            - generic [ref=f2e624]:
+              - heading "Contributors (1)" [level=2] [ref=f2e625]:
+                - generic [ref=f2e626]:
+                  - link "Contributors" [ref=f2e627] [cursor=pointer]:
+                    - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/graphs/contributors
+                  - generic [aria-hidden] [ref=f2e628]: "1"
+                  - generic [ref=f2e629]: (1)
+              - list [ref=f2e630]:
+                - listitem [ref=f2e631]:
+                  - link [ref=f2e632] [cursor=pointer]:
+                    - /url: /EswarZenGIT123
+                    - img "@EswarZenGIT123" [ref=f2e633]
+                  - generic "EswarZenGIT123" [ref=f2e634]:
+                    - link [ref=f2e635] [cursor=pointer]:
+                      - /url: /EswarZenGIT123
+                      - strong [ref=f2e636]: EswarZenGIT123
+            - generic [ref=f2e637]:
+              - heading "Languages" [level=2] [ref=f2e638]
+              - 'progressbar "TypeScript: 100%" [ref=f2e641]'
+              - list [ref=f2e642]:
+                - listitem [ref=f2e643]:
+                  - link "TypeScript 100%" [ref=f2e644] [cursor=pointer]:
+                    - /url: /EswarZenGIT123/AIQE_PLAYWRIGHTREPO/search?l=typescript
+                    - generic [ref=f2e646]: TypeScript
+                    - generic [ref=f2e647]: 100%
+  - alert [ref=f2e649]
+```

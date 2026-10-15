@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","21915","UI_002: Search repository under Top Repositories","chromium","2026-10-16","passed","2026-10-16","","ui\github.spec.ts","",""
+"","10567","UI_001: Login and verify Dashboard","chromium","2026-10-16","passed","2026-10-16","","ui\github.spec.ts","",""
+"","2922","API_001: Authenticate using token and verify GitHub user","chromium","2026-10-16","passed","2026-10-16","","api\github.spec.ts","",""
+"","21192","UI_003: Open searched repository and log its name","chromium","2026-10-16","passed","2026-10-16","","ui\github.spec.ts","",""
